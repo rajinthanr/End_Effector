@@ -66,12 +66,15 @@ Before prototyping, we analyzed commercial solutions such as the **MCS-RP Grippe
 We iterated through several hand-drawn and CAD-based sketches to derive the optimal design.
 
 ![Conceptual Designs](images/concept_sketches.png)
+![Functional_diagram](images/functional_diagram.png)
 
 This included a **functional block diagram** illustrating the interaction between suction mechanisms, ToF sensors, solenoids, and microcontroller units.
 
 ---
 
 ## 🧹 Component Selection
+
+![Mechanical components](images/components.jpg)
 
 We conducted technical evaluations and cost analysis to select the following:
 
@@ -83,6 +86,9 @@ We conducted technical evaluations and cost analysis to select the following:
 | Vacuum Ejector    | Airbest AZH10BS         | Cost-efficient vacuum generation|
 | Microcontroller   | ATmega2560              | Multi-UART, reliable processing |
 
+For more details about Tof sensor
+https://support.nooploop.com/tofsense/protocol/
+
 ---
 
 ## 🛠️ Mechanical Design
@@ -91,7 +97,7 @@ We conducted technical evaluations and cost analysis to select the following:
 1. **First iteration**: Focused on confirming dimensions and fit.
 2. **Final enclosure**: Zinc-coated sheet metal for durability and optimized integration with electronics.
 
-![Final Mechanical Design](images/final_design.png)
+![Final Mechanical Design](images/final_design.jpeg)
 
 ---
 
@@ -104,6 +110,8 @@ We designed a **hierarchical schematic** in Altium Designer and manufactured the
 - Separate buck converter PCB for power regulation  
 - RS485, UART, and SPI interfaces  
 - Solenoid switching circuitry with flyback protection
+
+![PCB](images/pcb.jpg)
 
 > ⚙️ PCB and schematic files are included in the `/hardware` directory.
 
@@ -139,7 +147,7 @@ The firmware was developed using **Atmel Studio** and **register-level programmi
 - Muftee M. M. M.  
 - Goonetilleke P.  
 - Jayakody J. A. K.  
-- **Rajinthan R.** (GitHub Maintainer)  
+- Rajinthan R.
 - Warushavithana N. D.  
 - Praveen V. V. J.  
 - V. G. V. Gunasekara  
